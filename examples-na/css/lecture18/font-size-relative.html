@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Setting font size</title>
+	<style type="text/css">
+		body {
+			/* common practice specify percentage in body; use em later as relative sizing */
+			/* don't mix and match % px and em */
+			font-size: 120%;
+		}
+	</style>
+</head>
+<body>
+<div>Regular text</div>
+<!--em is the font size at the moment we are applying it; so this will be 2 times 120% -->
+<div style="font-size: 2em;">
+	2em text
+	<div style="font-size: 2em;
+	">
+		4em text
+		<div style="font-size: .5em;">2em again!</div>
+	</div>
+</div>
+</body>
+</html>
