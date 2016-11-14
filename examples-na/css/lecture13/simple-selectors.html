@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Simple Selectors</title>
+	<style type="text/css">
+
+	/* element selector */
+	/* all h2 elements */
+	h2 {
+		color: red;
+		text-align: center;
+	}
+
+	/* class selector */
+	/* all with class="highlight"*/
+	.highlight {
+		font-size: 20px;
+		font-weight: bold;
+		font-style: italic;
+		background-color: green;
+		opacity: .6;
+	}
+
+	/* id selector is the least re-usable one (id needs to be unique in html document)*/
+	/* element with id="mainPoint"*/
+	#mainPoint {
+		font-size: 24px;
+		font-weight: bold;
+		background-color: red;
+		opacity: .7;
+	}
+
+	/* apply style to multiple elements */
+	/* all p AND h1 elements */
+	p, h1 {
+		color: blue;
+		text-align: center;
+	}
+
+	</style>
+</head>
+<body>
+	<h1>Simple Selectors (h1)</h1>
+	<h2>subheading 1 (h2)</h2>
+	<p class="highlight">
+		Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet 
+	</p>
+	<p class="highlight">
+		Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet 
+	</p>
+	<h2>subheading 2 (h2)</h2>
+	<p>
+		Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet 
+	</p>
+	<div>
+		This is the main point of the entire article. So, attribute <span id="mainPoint">id="mainPoint".</span>
+	</div>
+
+</body>
+
+</html>
