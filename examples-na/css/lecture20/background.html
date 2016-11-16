@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Background</title>
+<style type="text/css">
+#bg {
+	width: 500px;
+	height: 500px;
+	background-color: blue;
+	/* image is over background color */
+	/* relative to css file folder */
+	/*background-image: url("small.gif");*/
+	/*background-repeat: no-repeat;*/
+
+	/*background-position: bottom;*/
+	/*background-position: bottom right;*/
+
+	/* combine above style */
+	/* overwrite all previous background single - properties */
+	background: url('small.gif') no-repeat right center yellow;
+
+}
+</style>
+</head>
+<body>
+<h1>The Background Property</h1>
+
+<div id="bg">Background properties are fun!</div>
+</body>
+</html>

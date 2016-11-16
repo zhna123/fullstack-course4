@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style type="text/css">
+
+/* select every element and apply style to them */
+/* not require inherit */
+* {
+	box-sizing: border-box;
+	/* overwrite default browser style; usually sit in * slelector */
+	margin: 0;
+	padding: 0;
+}
+
+/* inherit by child elements, and child elements can overwrite it */
+body {
+
+	background-color: gray;
+}
+
+#box {
+	background-color: blue;
+	/* top, right, bottom, left */
+	padding: 10px 10px 10px 10px;
+	border: 5px solid black;
+	/*margin: 40px;*/
+	/* if only specify width here(without box-sizing set to be border-box), it is actually width of content! Because the default box-sizing is content-box */
+	width: 300px;
+	/* CSS3 came up with box-sizing, which can set width to include padding and border by setting it to be border-box */
+	/* by default, box-sizing is content-box */
+	/* always do this! */
+	/* It can not be inherited, so it cannot be specified inside body(parent) selector. It goes into * selector */
+	/*box-sizing: border-box;*/
+
+	/* this margin wont do anything because it collapse with the h1 margin on top which is bigger; However, left and right margins will merge together */
+	margin-top: 20px;
+
+	/* constraint height; need to handle overflow */
+	height: 50px;
+	/* default is visible, which will show overflow visibly */
+	/* auto will add scroll bar whenever needed */
+	overflow: auto;
+}
+
+#content {
+	background-color: #90EE90 
+}
+
+h1 {
+	margin-bottom: 30px;
+}
+
+</style>
+</head>
+<body>
+
+	<h1>Box Model</h1>
+	<div id="box">
+		<div id="content"> Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsum
+		</div>
+	</div>
+
+</body>
+</html>
