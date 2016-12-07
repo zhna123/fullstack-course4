@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>David Chu's China Bistro</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<!--create nav bar-->
+			<nav id="header-nav" class="navbar navbar-default">
+				<div class="container">
+					<!--insert logo-->
+					<!--for better mobile display-->
+					<div class="navbar-header">
+						<!--float left-->
+						<!--logo only visible on md and lg screen size-->
+						<a href="index.html" class="pull-left visible-md visible-lg">
+							<div id="logo-img" alt="Logo image"></div>
+						</a>
+						<!--for branding-->
+						<!--this navbar-brand already float left-->
+						<div class="navbar-brand">
+							<a href="index.html">
+								<h1>David Chu's China Bistro</h1>
+							</a>
+							<p>
+								<img src="images/star-k-logo.png" alt="Kosher certification">
+								<span>Kosher Certificated</span>
+							</p>
+						</div>
+						<!--navbar-toggle gives positioning and styling-->
+						<!--collapsed plugin from bootstrap-->
+						<!--area-expanded for screen reading-->
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#collapsable-nav" aria-expanded="false">
+							<!--this will not show up: sr-only-->
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<!--nav menu buttons. they are not part of nav-header-->
+					<div id="collapsable-nav" class="collapse navbar-collapse">
+						<!--nav navbar-nav will turn the ul to be a nice menu; navbar-right is to float right -->
+						<ul id="nav-list" class="nav navbar-nav navbar-right">
+							<li class="visible-xs">
+								<a href="index.html">
+									<!--icon font - has a vector shape -->
+									<span class="glyphicon glyphicon-home"></span>
+									Home
+								</a>
+							</li>
+							<!--indicate you are in the menu category page now-->
+							<li class="active">
+								<a href="menu-categories.html">
+									<!--icon font - has a vector shape -->
+									<span class="glyphicon glyphicon-cutlery"></span>
+									<!-- break go away when xs -->
+									<br class="hidden-xs">
+									Menu
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="glyphicon glyphicon-info-sign"></span>
+									<br class="hidden-xs">
+									About
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="glyphicon glyphicon-certificate"></span>
+									<br class="hidden-xs">
+									Awards
+								</a>
+							</li>
+							<li id="phone" class="hidden-xs">
+								<!--trigger phone call-->
+								<a href="tel:410-602-5008">
+									<span>410-602-5008</span>
+								</a>
+								<div>
+									* We Deliver
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</nav>
+		</header>
+
+		<div id="call-btn" class="visible-xs">
+			<a class="btn" href="tel:410-602-5008">
+				<span class="glyphicon glyphicon-earphone"></span>
+				410-602-5008
+			</a>
+		</div>
+		<div id="xs-deliver" class="text-center visible-xs">
+			* We Deliver
+		</div>
+
+		<div id="main-content" class="container">
+			<!--single category-->
+			<h2 id="menu-categories-title" class="text-center">Lunch Menu</h2>
+			<div class="text-center">Lunch is not served until after 1pm.</div>
+
+			<section class="row">
+				<div class="menu-item-tile col-md-6">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="menu-item-photo">
+								<div>D01</div>
+								<!--pretty small image, so just used img-responsive-->
+								<img src="images/menu/B/B-1.jpg" alt="Item" class="img-responsive" width="250" height="150">
+							</div>
+							<div class="menu-item-price">
+								$10.95<span>(pint)</span>
+								$14.95<span>(quart)</span>
+							</div>
+						</div>
+						<div class="col-sm-7 menu-item-description">
+							<h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
+							<p class="menu-item-details">
+								Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+								Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+								Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+								Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+							</p>
+						</div>
+					</div> 
+					<!--visually separate stacked items-->
+					<hr class="visible-xs">
+				</div> 
+
+				<div class="menu-item-tile col-md-6">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="menu-item-photo">
+								<div>D02</div>
+								<!--pretty small image, so just used img-responsive-->
+								<img src="images/menu/B/B-1.jpg" alt="Item" class="img-responsive" width="250" height="150">
+							</div>
+							<div class="menu-item-price">
+								$10.95<span>(pint)</span>
+								$14.95<span>(quart)</span>
+							</div>
+						</div>
+						<div class="col-sm-7 menu-item-description">
+							<h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
+							<p class="menu-item-details">
+								Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+								ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+							</p>
+						</div>
+					</div> 
+					<!--visually separate stacked items-->
+					<hr class="visible-xs">
+				</div> 
+				<!--clear float wrapping-->
+				<div class="clearfix visible-md-block visible-lg-block"></div>
+
+				<div class="menu-item-tile col-md-6">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="menu-item-photo">
+								<div>D03</div>
+								<!--pretty small image, so just used img-responsive-->
+								<img src="images/menu/B/B-1.jpg" alt="Item" class="img-responsive" width="250" height="150">
+							</div>
+							<div class="menu-item-price">
+								$10.95<span>(pint)</span>
+								$14.95<span>(quart)</span>
+							</div>
+						</div>
+						<div class="col-sm-7 menu-item-description">
+							<h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
+							<p class="menu-item-details">
+								Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+								ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+							</p>
+						</div>
+					</div> 
+					<!--visually separate stacked items-->
+					<hr class="visible-xs">
+				</div> 
+
+				<div class="menu-item-tile col-md-6">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="menu-item-photo">
+								<div>D04</div>
+								<!--pretty small image, so just used img-responsive-->
+								<img src="images/menu/B/B-1.jpg" alt="Item" class="img-responsive" width="250" height="150">
+							</div>
+							<div class="menu-item-price">
+								$10.95<span>(pint)</span>
+								$14.95<span>(quart)</span>
+							</div>
+						</div>
+						<div class="col-sm-7 menu-item-description">
+							<h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
+							<p class="menu-item-details">
+								Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+							</p>
+						</div>
+					</div> 
+					<!--visually separate stacked items-->
+					<hr class="visible-xs">
+				</div> 
+
+				<div class="clearfix visible-md-block visible-lg-block"></div>
+
+
+				<div class="menu-item-tile col-md-6">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="menu-item-photo">
+								<div>D05</div>
+								<!--pretty small image, so just used img-responsive-->
+								<img src="images/menu/B/B-1.jpg" alt="Item" class="img-responsive" width="250" height="150">
+							</div>
+							<div class="menu-item-price">
+								$10.95<span>(pint)</span>
+								$14.95<span>(quart)</span>
+							</div>
+						</div>
+						<div class="col-sm-7 menu-item-description">
+							<h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
+							<p class="menu-item-details">
+								Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+								ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+							</p>
+						</div>
+					</div> 
+					<!--visually separate stacked items-->
+					<hr class="visible-xs">
+				</div> 
+
+				<div class="menu-item-tile col-md-6">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="menu-item-photo">
+								<div>D06</div>
+								<!--pretty small image, so just used img-responsive-->
+								<img src="images/menu/B/B-1.jpg" alt="Item" class="img-responsive" width="250" height="150">
+							</div>
+							<div class="menu-item-price">
+								$10.95<span>(pint)</span>
+								$14.95<span>(quart)</span>
+							</div>
+						</div>
+						<div class="col-sm-7 menu-item-description">
+							<h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
+							<p class="menu-item-details">
+								Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+							</p>
+						</div>
+					</div> 
+					<!--visually separate stacked items-->
+					<hr class="visible-xs">
+				</div> 
+
+				<div class="clearfix visible-md-block visible-lg-block"></div>
+
+			</section>
+			
+
+		</div> <!--end of #main-content-->
+
+		<!--panel-footer: set default footer background, padding and stuff-->
+		<footer class="panel-footer">
+			<div class="container">
+				<div class="row">
+					<section id="hours" class="col-sm-4">
+						<span>Hours:</span><br>
+						Sun-Thurs: 11:15am - 10:00pm<br>
+						Fri: 11:15am - 2:30pm<br>
+						Saturday Closed
+						<hr class="visible-xs">
+					</section>
+					<section id="address" class="col-sm-4">
+						<span>Address:</span><br>
+						7105 Reisterstown Road<br>
+						Baltimore, MD 21215
+						<p>
+							* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.
+						</p>
+						<hr class="visible-xs">
+					</section>
+					<section id="testimonials" class="col-sm-4">
+						<p>
+							"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"
+						</p>
+						<p>
+							"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"
+						</p>
+					</section>
+				</div>
+
+				<div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+
+			</div> <!--end of #container-->
+
+		</footer>
+
+		<!-- JQuery (Bootstrap JS plugins depend on it -->
+			<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
